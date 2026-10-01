@@ -1,2 +1,0 @@
-# .github
-Visual information repository
