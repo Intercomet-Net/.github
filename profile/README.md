@@ -131,7 +131,7 @@ Please **do not** report vulnerabilities through public issues. See our [Securit
 <div align="center">
 
 **Intercomet Network** · Built with passion and a vision.
--# Love from lumensplit @ Intercomet!!
+Love from lumensplit @ Intercomet!!
 
 [Discord](https://discord.gg/bw2dB8Vdt4) · [Main Repository](https://github.com/Intercomet-Net/Intercomet) · [Contributing](https://github.com/Intercomet-Net/Intercomet/blob/main/CONTRIBUTING.md)
 
