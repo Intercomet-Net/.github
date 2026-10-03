@@ -1,6 +1,6 @@
 <div align="center">
 
-# ☄️ Intercomet
+# 💫 Intercomet
 
 **A connected Minecraft network. One identity. Many experiences.**
 
@@ -107,11 +107,11 @@ Guiding principles:
 
 ## 🗺️ Roadmap
 
-- [x] **Foundation** — modular project structure, service registry, persistence layer
-- [ ] **Core Gameplay** — economy, claims, moderation, progression, rewards *(in progress)*
-- [ ] **Ecosystem** — Discord linking and role sync, web platform, payments, analytics
-- [ ] **Expansion** — additional game modes, cosmetics, events, seasonal systems
-- [ ] **Platform** — admin dashboard, public APIs, advanced analytics
+- **Foundation** — modular project structure, service registry, persistence layer
+- **Core Gameplay** — economy, claims, moderation, progression, rewards *(in progress)*
+- **Ecosystem** — Discord linking and role sync, web platform, payments, analytics
+- **Expansion** — additional game modes, cosmetics, events, seasonal systems
+- **Platform** — admin dashboard, public APIs, advanced analytics
 
 ---
 
@@ -130,7 +130,8 @@ Please **do not** report vulnerabilities through public issues. See our [Securit
 
 <div align="center">
 
-**Intercomet Network** · Built with ☕ and a lot of Minecraft
+**Intercomet Network** · Built with passion and a vision.
+-# Love from lumensplit @ Intercomet!!
 
 [Discord](https://discord.gg/bw2dB8Vdt4) · [Main Repository](https://github.com/Intercomet-Net/Intercomet) · [Contributing](https://github.com/Intercomet-Net/Intercomet/blob/main/CONTRIBUTING.md)
 
