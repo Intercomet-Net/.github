@@ -13,7 +13,7 @@
 
 ---
 
-## 🌌 What is Intercomet?
+## What is Intercomet?
 
 Intercomet is a Minecraft multiplayer network built around a simple idea: **your enjoyment is our top priority**.
 
@@ -23,19 +23,7 @@ Each game server stays modular and independently deployable. A shared platform l
 
 ---
 
-## 🧩 The Ecosystem
-
-| Surface | What it does |
-| --- | --- |
-| 🎮 **Minecraft Network** | Paper-based game servers running the Intercomet plugin, with a Velocity proxy planned in front. |
-| 💬 **Discord** | Community hub, punishment and server-log notifications, and (planned) account linking and role sync. |
-| ⚙️ **Platform Services** | Shared domain services for identity, economy, claims, moderation, and entitlements. |
-| 📡 **Event Backbone** | Versioned events carried over Kafka for audit, analytics, and integrations. |
-| 💳 **Monetization** | Stripe support planned, with verified webhooks and idempotent fulfillment. |
-
----
-
-## 📦 Repositories
+## Repositories
 
 | Repository | Description |
 | --- | --- |
@@ -54,40 +42,28 @@ The main project is split into modules so shared contracts can be reused indepen
 
 ---
 
-## ✨ Gameplay Systems
+## Gameplay
 
-Systems currently in the plugin, at varying stages of completion:
+Systems planned or currently provided by thr plugin.
 
-- 🛡️ **Land Claims** — claim shovel, role-based permissions (member / trusted / owner), and particle visualization
-- 💰 **Economy** — balances, shards, and a ledger-style transaction model
-- 🏷️ **Clans** — ownership, membership, levels, and balances
-- 🔨 **Auction House** — player-to-player item sales
-- 🎯 **Bounties** — player bounties with expiry
-- 💼 **Jobs** — job types and XP progression
-- 🧳 **Vaults** — persistent, paged per-player storage
-- ⚔️ **Combat Tagging** — combat timer and command restrictions
-- 🏠 **Homes**, ⏱️ **Playtime**, 📊 **Scoreboards**, 🚨 **Punishments & Reports**
+- **Land Claims** — claim shovel, role-based permissions (member / trusted / owner), and particle visualization
+- **Economy** — balances, shards, and a ledger-style transaction model
+- **Clans** — ownership, membership, levels, and balances
+- **Auction House** — player manager item sales
+- **Bounties** — player bounties with expiry
+- **Jobs** — job types and XP progression
+- **Vaults** — persistent, paged per-player storage
+- **Combat Tagging** — combat timer and command restrictions
+- **Homes**, **Playtime**, **Scoreboards**, **Punishments & Reports**
 
 ---
-
-## 🏗️ Architecture at a Glance
-
-```
-Players → Velocity Proxy → Minecraft Servers (Intercomet plugin)
-                                   │
-                          Platform services
-                                   │
-                                 Kafka
-                  ┌────────────────┼────────────────┐
-                Audit          Analytics        Discord / Web
-```
 
 Guiding principles:
 
 - **Domain ownership** — one service owns each domain's authoritative state.
 - **Failure isolation** — a Discord, web, or analytics outage never blocks gameplay.
 - **Events over coupling** — domains publish versioned events; consumers stay independent.
-- **Idempotency everywhere** — retried purchases, transfers, and events produce one effective result.
+- **Idempotency supported models** — retried purchases, transfers, and events produce one effective result.
 - **Security by design** — least privilege, verified webhooks, and no secrets in source control.
 
 ---
@@ -105,7 +81,7 @@ Guiding principles:
 
 ---
 
-## 🗺️ Roadmap
+## Roadmap
 
 - **Foundation** — modular project structure, service registry, persistence layer
 - **Core Gameplay** — economy, claims, moderation, progression, rewards *(in progress)*
@@ -115,14 +91,14 @@ Guiding principles:
 
 ---
 
-## 🤝 Get Involved
+## How to get Involved
 
 1. Read the [Contributing Guide](https://github.com/Intercomet-Net/Intercomet/blob/main/CONTRIBUTING.md) and [Code of Conduct](https://github.com/Intercomet-Net/Intercomet/blob/main/CODE_OF_CONDUCT.md).
 2. Browse open issues or propose an idea before starting something large.
 3. Fork, branch, build with `mvn clean verify`, and open a pull request.
 4. Come say hi in our [Discord](https://discord.gg/bw2dB8Vdt4).
 
-### 🔒 Security
+### Security
 
 Please **do not** report vulnerabilities through public issues. See our [Security Policy](https://github.com/Intercomet-Net/Intercomet/blob/main/SECURITY.md) and open a staff ticket in Discord.
 
